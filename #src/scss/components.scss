@@ -1,0 +1,47 @@
+.link-style{
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  color: $col-dark-navy;
+  transition: 300ms;
+  a{
+    color: $col-dark-navy;
+    transition: 300ms;
+  }
+  @media (min-width: 1200px) {
+    &:hover{
+      color: $col-orange;
+      a{
+        color: $col-orange;
+      }
+      &.submenu{
+        svg{
+          fill: $col-orange;
+        }
+      }
+    }
+  }
+}
+
+.btn-cta{
+  font-family: "Kamerik";
+  font-size: 14px;
+  line-height: 14px;
+  padding: 14px 30px;
+  border-radius: 100px;
+  font-weight: 700;
+  transition: 300ms;
+  &._orange{
+    color: $col-white;
+    background-color: $col-orange;
+    border: 2px solid $col-orange;
+    @media (min-width: 1200px) {
+      &:hover{
+        color: $col-orange;
+        background-color: $col-white;
+      }
+    }
+  }
+}

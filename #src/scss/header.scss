@@ -1,2 +1,77 @@
+.header {
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 33px 0;
 
+    &_navigation {
+      display: flex;
+      align-items: center;
+      flex: 0 1 100%;
+      justify-content: flex-end;
+      .navigation {
+        &__list{
+          display: flex;
+          &_link{
+            margin: 0 0 0 64px;
+            padding: 14px 0;
+            &.submenu{
+              position: relative;
+              padding: 14px 19px 14px 0;
+              svg{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1px;
+                width: 16px;
+                height: 16px;
+                fill: $col-dark-navy;
+                transition: 300ms;
+              }
+            }
+          }
+        }
+        &__cta{
+          display: flex;
+          align-items: center;
+          margin: 0 0 0 23px;
+          &_link{
+            position: relative;
+            padding: 14px 40px;
+            &.ico-svg{
+              padding: 14px 40px 14px 23px;
+              margin: 0 0 0 40px;
+              &:after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 16px;
+                height: 16px;
+                background-size: 16px 16px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url("../img/phone.svg");
+              }
+            }
+            &:before{
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 50%;
+              width: 1px;
+              transform: translateY(-50%);
+              height: 17px;
+              background-color: $col-grey;
+            }
+          }
+          .btn-cta{
+            margin: 0 0 0 37px;
+          }
+        }
+      }
+    }
+  }
+}
 
