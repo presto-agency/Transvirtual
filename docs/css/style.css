@@ -664,10 +664,11 @@ h6 {
 
   .header__content_navigation .navigation__list_link > a {
     display: block;
+    padding: 0 24px 0 0;
   }
 
   .header__content_navigation .navigation__list_link.submenu {
-    padding: 0 24px 0 0;
+    padding: 0;
   }
 
   .header__content_navigation .navigation__list_link.submenu svg {
@@ -697,6 +698,7 @@ h6 {
             flex-direction: column;
     max-height: 0px;
     overflow: hidden;
+    border-radius: initial;
     -webkit-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
