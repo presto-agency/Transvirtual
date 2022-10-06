@@ -71,17 +71,29 @@
                 line-height: 14px;
                 font-weight: 700;
                 color: $col-dark-navy;
+                transition: 300ms;
 
                 a {
                   color: $col-dark-navy;
+                  transition: 300ms;
+                }
+                @media (min-width: 1200px) {
+                 li{
+                   &:hover{
+                     color: $col-orange;
+                     a{
+                       color: $col-orange;
+                     }
+                   }
+                 }
                 }
               }
 
               > li {
                 padding: 39px;
+                width: 346px;
 
                 &:first-child {
-                  width: 346px;
 
                   li {
                     margin: 0 0 24px 0;
@@ -109,7 +121,7 @@
                   }
                 }
 
-                &:last-child {
+                &:nth-child(2) {
                   background-color: $col-light-blue;
                   width: 257px;
 
