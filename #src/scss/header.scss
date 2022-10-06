@@ -5,6 +5,14 @@
   left: 0;
   width: 100vw;
   background-color: $col-white;
+  transition: 500ms;
+  @media (min-width: 1200px) {
+    &.hide {
+      background-color: $col-light-blue;
+      box-shadow: 0px 1px 25px rgb(0 51 117 / 10%);
+    }
+  }
+
   &__content {
     display: flex;
     align-items: center;
@@ -17,6 +25,7 @@
       justify-content: flex-end;
       padding: 18px 0 0 0;
       transition: 500ms;
+
       .navigation {
         &__list {
           display: flex;
@@ -225,7 +234,7 @@
               background-color: $col-grey;
             }
 
-            span{
+            span {
               display: none;
               font-size: 16px;
               line-height: 16px;
@@ -236,8 +245,9 @@
           .btn-cta {
             align-self: flex-start;
             margin: 0 0 0 37px;
-            span{
-              &:nth-child(2){
+
+            span {
+              &:nth-child(2) {
                 display: none;
               }
             }
@@ -246,7 +256,8 @@
 
       }
     }
-    &_burger{
+
+    &_burger {
       display: none;
       position: relative;
       padding: 13px 10px;
@@ -255,7 +266,8 @@
       box-sizing: content-box;
       border-radius: 50%;
       background-color: $col-orange;
-      span{
+
+      span {
         position: absolute;
         width: 20px;
         height: 2px;
@@ -263,25 +275,30 @@
         left: 10px;
         border-radius: 1px;
         transition: 500ms;
-        &:nth-child(1){
+
+        &:nth-child(1) {
           top: 13px;
         }
-        &:nth-child(2){
+
+        &:nth-child(2) {
           left: 16px;
           width: 13px;
           top: 50%;
           transform: translateY(-50%);
         }
-        &:nth-child(3){
+
+        &:nth-child(3) {
           top: initial;
           bottom: 13px;
         }
       }
     }
-    &_logo{
+
+    &_logo {
       flex: 0 0 161px;
       height: 33px;
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: contain;
@@ -292,19 +309,21 @@
 }
 
 @media (max-width: 1439px) {
-  .header{
-    &__content{
-      &_navigation{
-        .navigation{
-          &__list{
-            &_link{
+  .header {
+    &__content {
+      &_navigation {
+        .navigation {
+          &__list {
+            &_link {
               margin: 0 0 0 43px;
             }
           }
-          &__cta{
-            &_link{
+
+          &__cta {
+            &_link {
               padding: 14px 20px 32px;
-              &.ico-svg{
+
+              &.ico-svg {
                 margin: 0 0 0 20px;
                 padding: 14px 20px 32px 23px;
               }
@@ -317,24 +336,27 @@
 }
 
 @media (max-width: 1199px) {
-  .header{
-    &.active{
-      .header{
-        &__content{
-          &_navigation{
+  .header {
+    &.active {
+      .header {
+        &__content {
+          &_navigation {
             transform: initial;
           }
-          &_burger{
-            span{
-              &:nth-child(1){
+
+          &_burger {
+            span {
+              &:nth-child(1) {
                 top: 50%;
                 transform: translateY(-50%) rotate(-45deg);
               }
-              &:nth-child(2){
+
+              &:nth-child(2) {
                 left: -10px;
                 opacity: 0;
               }
-              &:nth-child(3){
+
+              &:nth-child(3) {
                 bottom: 50%;
                 transform: translateY(50%) rotate(45deg);
               }
@@ -343,15 +365,18 @@
         }
       }
     }
-    .link-style{
+
+    .link-style {
       font-size: 28px;
       line-height: 36px;
     }
-    &__content{
+
+    &__content {
       justify-content: space-between;
       padding: 22px 0;
       position: relative;
-      &:before{
+
+      &:before {
         content: '';
         position: fixed;
         top: 0;
@@ -362,17 +387,20 @@
         box-shadow: 0px 1px 25px rgb(0 51 117 / 10%);
         z-index: 2;
       }
-      &_burger{
+
+      &_burger {
         display: block;
         z-index: 3;
       }
-      &_logo{
+
+      &_logo {
         position: relative;
         z-index: 3;
         flex: 0 0 144px;
         height: 29px;
       }
-      &_navigation{
+
+      &_navigation {
         position: fixed;
         top: 0;
         left: 0;
@@ -386,71 +414,122 @@
         overflow-y: auto;
         background-color: $col-light-blue;
         transform: translateY(-100vh);
-        .navigation{
-          &__list{
+
+        .navigation {
+          &__list {
             width: 100%;
             flex-direction: column;
             margin: 0 0 8px 0;
-            &_link{
+
+            &_link {
               margin: 0 0 24px 0;
               padding: 0;
-              &.submenu{
+
+              > a {
+                display: block;
+              }
+
+              &.submenu {
                 padding: 0 24px 0 0;
 
-                svg{
-                  top: 50%;
+                svg {
+                  top: 17px;
                   width: 24px;
                   height: 24px;
+                  transition: 500ms;
+                }
+
+                &.open{
+                  svg{
+                    transform: translateY(-50%) rotateX(180deg);
+                  }
+                }
+
+                .dropdown-menu {
+                  position: static;
+                  opacity: 1;
+                  pointer-events: initial;
+                  background-color: $col-light-blue;
+                  box-shadow: initial;
+                  flex-direction: column;
+                  max-height: 0px;
+                  overflow: hidden;
+                  transition: 500ms;
+
+                  > li {
+                    width: 100%;
+                    padding: 16px 0 0 0;
+
+                    &:nth-child(2) {
+                      width: 100%;
+                    }
+                  }
+
+                  &:before {
+                    display: none;
+                  }
                 }
               }
             }
           }
-          &__cta{
+
+          &__cta {
             width: 100%;
             flex-direction: column;
             margin: 0;
-            &_link{
+
+            &_link {
               padding: 0;
-              &:first-child{
+
+              &:first-child {
                 order: 3;
                 margin: 8px 0 0 0;
                 text-align: center;
-                &:before{
+
+                &:before {
                   display: none;
                 }
-                span{
+
+                span {
                   display: inline-block;
                 }
-                a{
+
+                a {
                   font-size: 16px;
                   line-height: 16px;
                   color: $col-orange;
                   border-bottom: 1px solid $col-orange;
                 }
               }
-              &.ico-svg{
+
+              &.ico-svg {
                 border-top: 1px solid $col-grey;
                 border-bottom: 1px solid $col-grey;
                 padding: 32px 0 32px 30px;
                 margin: 0 0 28px 0;
-                &:after{
+
+                &:after {
                   width: 24px;
                   height: 24px;
                   background-size: 24px 24px;
                   top: 50%;
                 }
-                &:before{
+
+                &:before {
                   display: none;
                 }
               }
             }
-            .btn-cta{
+
+            .btn-cta {
               margin: 0;
               padding: 22px 102px;
               align-self: center;
-              span{
+
+              span {
                 display: none;
-                &:nth-child(2){
+
+                &:nth-child(2) {
                   display: block;
                 }
               }
@@ -463,12 +542,12 @@
 }
 
 @media (max-width: 359px) {
-  .header{
-    &__content{
-      &_navigation{
-        .navigation{
-          &__cta{
-            .btn-cta{
+  .header {
+    &__content {
+      &_navigation {
+        .navigation {
+          &__cta {
+            .btn-cta {
               padding: 20px 80px;
             }
           }

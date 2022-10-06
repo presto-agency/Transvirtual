@@ -188,6 +188,9 @@ h6 {
   left: 0;
   width: 100vw;
   background-color: #fff;
+  -webkit-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms;
 }
 
 .header__content {
@@ -514,6 +517,12 @@ h6 {
     background-color: #fff;
   }
 
+  .header.hide {
+    background-color: #F6FAFE;
+    -webkit-box-shadow: 0px 1px 25px rgba(0, 51, 117, 0.1);
+            box-shadow: 0px 1px 25px rgba(0, 51, 117, 0.1);
+  }
+
   .header__content_navigation .navigation__list_link.submenu:hover .dropdown-menu {
     opacity: 1;
     pointer-events: initial;
@@ -653,14 +662,57 @@ h6 {
     padding: 0;
   }
 
+  .header__content_navigation .navigation__list_link > a {
+    display: block;
+  }
+
   .header__content_navigation .navigation__list_link.submenu {
     padding: 0 24px 0 0;
   }
 
   .header__content_navigation .navigation__list_link.submenu svg {
-    top: 50%;
+    top: 17px;
     width: 24px;
     height: 24px;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+  }
+
+  .header__content_navigation .navigation__list_link.submenu.open svg {
+    -webkit-transform: translateY(-50%) rotateX(180deg);
+            transform: translateY(-50%) rotateX(180deg);
+  }
+
+  .header__content_navigation .navigation__list_link.submenu .dropdown-menu {
+    position: static;
+    opacity: 1;
+    pointer-events: initial;
+    background-color: #F6FAFE;
+    -webkit-box-shadow: initial;
+            box-shadow: initial;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+  }
+
+  .header__content_navigation .navigation__list_link.submenu .dropdown-menu > li {
+    width: 100%;
+    padding: 16px 0 0 0;
+  }
+
+  .header__content_navigation .navigation__list_link.submenu .dropdown-menu > li:nth-child(2) {
+    width: 100%;
+  }
+
+  .header__content_navigation .navigation__list_link.submenu .dropdown-menu:before {
+    display: none;
   }
 
   .header__content_navigation .navigation__cta {
