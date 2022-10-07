@@ -34,11 +34,15 @@
             margin: 0 0 0 64px;
             padding: 14px 0 32px;
 
-            &.submenu {
+            &.submenu-item-trigger {
               position: relative;
               padding: 14px 19px 32px 0;
               @media (min-width: 1200px) {
                 &:hover {
+                  svg {
+                    fill: $col-orange;
+                  }
+
                   .dropdown-menu {
                     opacity: 1;
                     pointer-events: initial;
@@ -88,6 +92,7 @@
                 color: $col-dark-navy;
                 transition: 300ms;
 
+
                 a {
                   color: $col-dark-navy;
                   transition: 300ms;
@@ -122,6 +127,9 @@
                     > a {
                       display: flex;
                       align-items: center;
+                      font-size: 14px;
+                      line-height: 14px;
+                      font-weight: 700;
 
                       span {
                         width: 32px;
@@ -136,6 +144,9 @@
                       }
 
                       p {
+                        font-size: 14px;
+                        line-height: 14px;
+                        font-weight: 700;
                         small {
                           display: block;
                           text-transform: capitalize;
@@ -430,7 +441,7 @@
                 padding: 0 24px 0 0;
               }
 
-              &.submenu {
+              &.submenu-item-trigger {
                 padding: 0;
 
                 svg {
@@ -440,8 +451,8 @@
                   transition: 500ms;
                 }
 
-                &.open{
-                  svg{
+                &.open {
+                  svg {
                     transform: translateY(-50%) rotateX(180deg);
                   }
                 }
@@ -461,6 +472,18 @@
                   > li {
                     width: 100%;
                     padding: 16px 0 0 0;
+
+                    &:first-child{
+                      li{
+                        a{
+                          p{
+                            small{
+                              display: none;
+                            }
+                          }
+                        }
+                      }
+                    }
 
                     &:nth-child(2) {
                       width: 100%;

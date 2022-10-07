@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     scrollPage()
   }
   if (window.screen.width < 1200) {
-    showSubmenu(document.querySelectorAll('.submenu'))
+    showSubmenu(document.querySelectorAll('.submenu-item-trigger'))
   }
 })
 
@@ -32,17 +32,17 @@ const headerActive = () => {
 }
 
 const scrollPage = () => {
-    let scrollPosition;
-    const header = document.querySelector('.header');
-    const scrollChange = 1;
+  let scrollPosition;
+  const header = document.querySelector('.header');
+  const scrollChange = 1;
 
-    const addClass = () => header.classList.add("hide")
-    const removeClass = () => header.classList.remove("hide")
+  const addClass = () => header.classList.add("hide")
+  const removeClass = () => header.classList.remove("hide")
 
-    window.addEventListener('scroll', function () {
-        scrollPosition = window.scrollY;
-        scrollPosition >= scrollChange?addClass():removeClass();
-    })
+  window.addEventListener('scroll', function () {
+    scrollPosition = window.scrollY;
+    scrollPosition >= scrollChange ? addClass() : removeClass();
+  })
 }
 
 const showSubmenu = (itemsLinks) => {
