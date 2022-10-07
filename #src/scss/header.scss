@@ -180,13 +180,12 @@
                     line-height: 21px;
                     font-weight: 400;
                     margin: 24px 0 0 0;
-                    border-bottom: 1px solid $col-grey-dark;
+                    border-bottom: 1px solid rgba($col-grey-dark, 1);
                     transition: 300ms;
                     @media (min-width: 1200px) {
                       &:hover {
                         opacity: .5;
                         border-bottom: 1px solid rgba($col-grey-dark, 0.5);
-
                       }
                     }
                   }
