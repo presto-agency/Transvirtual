@@ -50,15 +50,11 @@ const showSubmenu = (itemsLinks) => {
   function setHeight(itemsLinks) {
     if (itemsLinks.length > 0) {
       itemsLinks.forEach(item => {
-        let itemLink = item.querySelector('a');
-        if (!!itemLink) {
-          itemLink.onclick = (e) => {
-            e.preventDefault()
-            let itemsMenu = item.querySelectorAll('.dropdown-menu>li');
-            let submenuHeight = getHeight(itemsMenu)
-            checkHeight(itemsMenu[0], submenuHeight)
-            itemsMenu[0].parentNode.parentNode.classList.toggle('open')
-          }
+        item.onclick = () => {
+          let itemsMenu = item.querySelectorAll('.dropdown-menu>li');
+          let submenuHeight = getHeight(itemsMenu)
+          checkHeight(itemsMenu[0], submenuHeight)
+          itemsMenu[0].parentNode.parentNode.classList.toggle('open')
         }
       })
     }
