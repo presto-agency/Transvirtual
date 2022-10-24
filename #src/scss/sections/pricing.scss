@@ -1,0 +1,169 @@
+.hero-block {
+  background-color: $col-dark-navy;
+
+  .container {
+    position: relative;
+  }
+
+  &__top-content {
+    color: $col-white;
+    text-align: center;
+    padding: 89px 0 319px 0;
+    letter-spacing: 0.03em;
+
+    h1 {
+      margin: 10px 0 0 0;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 33px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      max-width: 832px;
+      margin: 54px auto 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 21px;
+        line-height: 32px;
+
+        span {
+          width: 32px;
+          height: 32px;
+          margin: 0 8px 0 0;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom-content {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -261px;
+    background-color: $col-white;
+    padding: 48px;
+    box-shadow: -2px 13px 53px rgba(12, 25, 58, 0.06);
+    border-radius: 22px;
+    display: flex;
+
+    .bottom-content {
+      &__pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $col-white;
+        background-color: $col-dark-navy;
+        padding: 50px;
+        border-radius: 22px;
+        text-align: center;
+        width: 443px;
+        min-height: 412px;
+
+        &-top {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 0 17px 0;
+
+
+          span {
+            width: 38px;
+            height: 38px;
+            margin: 0 13px 0 0;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+
+          strong {
+            font-size: 52px;
+            line-height: 52px;
+            font-weight: 700;
+          }
+        }
+
+        &-bottom {
+          margin: 0 0 64px 0;
+
+          small {
+            font-size: 28px;
+            line-height: 30px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &__list {
+        flex: 0 1 70%;
+        margin: 0 0 0 64px;
+
+        p {
+          font-size: 28px;
+          line-height: 30px;
+          font-weight: 700;
+          color: $col-dark-navy;
+          margin: 10px 0 32px 0;
+          max-width: 391px;
+        }
+
+        small {
+          display: block;
+          font-size: 18px;
+          line-height: 23px;
+          color: $col-grey-text;
+          margin: 0 0 12px 0;
+        }
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin: -6px -18px;
+
+          li {
+            position: relative;
+            width: calc((100% - (18px * 4)) / 2);
+            font-size: 21px;
+            line-height: 34px;
+            color: $col-black;
+            padding: 0 0 0 30px;
+            margin: 6px 18px;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 1px;
+              width: 24px;
+              height: 24px;
+              background-image: url("../img/pricing/tick.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 24px 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

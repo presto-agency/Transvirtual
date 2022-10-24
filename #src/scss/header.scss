@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100vw;
@@ -147,6 +147,7 @@
                         font-size: 14px;
                         line-height: 14px;
                         font-weight: 700;
+
                         small {
                           display: block;
                           text-transform: capitalize;
@@ -472,11 +473,11 @@
                     width: 100%;
                     padding: 16px 0 0 0;
 
-                    &:first-child{
-                      li{
-                        a{
-                          p{
-                            small{
+                    &:first-child {
+                      li {
+                        a {
+                          p {
+                            small {
                               display: none;
                             }
                           }

@@ -5,9 +5,12 @@
 
 .container {
   max-width: 1312px;
-  padding: 0px 24px;
+  padding: 0px 21px;
   margin: 0px auto;
   box-sizing: content-box;
+  &._medium{
+    max-width: 1231px;
+  }
 }
 
 .root {
