@@ -9,15 +9,15 @@
   margin: 0px auto;
   box-sizing: content-box;
   &._medium{
-    max-width: 1231px;
+    max-width: 1271px;
   }
 }
 
 .root {
   padding: 114px 0 0 0;
-  //@media(max-width: 1023px) {
-  //  padding: 39px 0 0 0;
-  //}
+  @media(max-width: 1199px) {
+    padding: 84px 0 0 0;
+  }
 }
 
 .page {
