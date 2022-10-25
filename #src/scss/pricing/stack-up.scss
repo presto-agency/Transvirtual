@@ -11,10 +11,8 @@
       flex: 0 1 45%;
       margin: 0 53px 0 0;
 
-      h3 {
-        font-size: 46px;
-        line-height: 48px;
-        font-weight: 700;
+      h2 {
+        color: $col-white;
         margin: 8px 0 20px 0;
       }
 
@@ -126,17 +124,13 @@
   .stack-up {
     &__content {
       &-text {
-        h3 {
-          font-size: 36px;
-          line-height: 38px;
-        }
 
         p {
           font-size: 16px;
           line-height: 26px;
         }
 
-        .btn-cta-v{
+        .btn-cta-v {
           margin: 27px 0 14px;
         }
       }
