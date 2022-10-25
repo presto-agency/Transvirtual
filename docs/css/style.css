@@ -1453,11 +1453,17 @@ p strong {
   }
 
   .reviews__comment span strong {
-    left: 62px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   .reviews__comment span p {
-    left: 75px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   .reviews__comment > p {

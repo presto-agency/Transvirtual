@@ -194,11 +194,13 @@
         margin: 0 auto;
 
         strong {
-          left: 62px;
+          left: 50%;
+          transform: translateX(-50%);
         }
 
         p {
-          left: 75px;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
 
