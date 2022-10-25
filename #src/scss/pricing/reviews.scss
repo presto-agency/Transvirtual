@@ -1,5 +1,6 @@
 .reviews {
   margin: 80px 0 122px;
+
   &__comment {
     display: flex;
     max-width: 1014px;
@@ -75,7 +76,7 @@
       border-radius: 8px;
       background: $col-grey-bg;
       padding: 36px 40px 40px;
-      height: 327px;
+      min-height: 327px;
 
       &.blue {
         span {
@@ -160,6 +161,100 @@
         strong {
           font-weight: 700;
         }
+      }
+    }
+  }
+
+  &__hand {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .reviews {
+    &__cards {
+      li {
+        width: calc((100% - (8px * 4)) / 2);
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews {
+    margin: 60px 0;
+
+    &__comment {
+      padding: 60px 0 0 0;
+      flex-direction: column;
+
+      span {
+        flex: initial;
+        width: 240px;
+        margin: 0 auto;
+
+        strong {
+          left: 62px;
+        }
+
+        p {
+          left: 75px;
+        }
+      }
+
+      > p {
+        margin: 40px 0 0 0;
+        font-size: 21px;
+        line-height: 33px;
+        text-align: center;
+      }
+    }
+
+    &__cards {
+      flex-wrap: nowrap;
+      overflow: auto;
+      margin: 16px 0 0 0;
+      padding: 0 0 17px 0;
+      width: calc(100% + 21px);
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $col-orange;
+        border-radius: 26px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-top: 1px solid $col-white;
+        border-bottom: 1px solid $col-white;
+        background: rgba($col-dark-navy, 0.2);
+      }
+
+      li {
+        width: initial;
+        flex: 0 0 308px;
+      }
+    }
+
+    &__hand {
+      margin: 82px 0 0 0;
+      position: relative;
+      display: flex;
+      height: 32px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 27px;
+        height: 32px;
+        background-image: url("../img/pricing/hand.png");
+        background-size: 27px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
       }
     }
   }

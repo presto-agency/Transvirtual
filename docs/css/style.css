@@ -931,7 +931,7 @@ p strong {
   border-radius: 8px;
   background: #F9F8FC;
   padding: 36px 40px 40px;
-  height: 327px;
+  min-height: 327px;
 }
 
 .reviews__cards li.blue span strong {
@@ -1006,6 +1006,10 @@ p strong {
 
 .reviews__cards li > p strong {
   font-weight: 700;
+}
+
+.reviews__hand {
+  display: none;
 }
 
 @media (min-width: 1200px) {
@@ -1315,6 +1319,10 @@ p strong {
   .header__content_navigation .navigation__cta .btn-cta span:nth-child(2) {
     display: block;
   }
+
+  .reviews__cards li {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
 @media (max-width: 1023px) {
@@ -1422,6 +1430,94 @@ p strong {
 
   .logos-list ul li {
     height: 30px;
+  }
+
+  .reviews {
+    margin: 60px 0;
+  }
+
+  .reviews__comment {
+    padding: 60px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .reviews__comment span {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .reviews__comment span strong {
+    left: 62px;
+  }
+
+  .reviews__comment span p {
+    left: 75px;
+  }
+
+  .reviews__comment > p {
+    margin: 40px 0 0 0;
+    font-size: 21px;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  .reviews__cards {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow: auto;
+    margin: 16px 0 0 0;
+    padding: 0 0 17px 0;
+    width: calc(100% + 21px);
+  }
+
+  .reviews__cards::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .reviews__cards::-webkit-scrollbar-thumb {
+    background: #E88645;
+    border-radius: 26px;
+  }
+
+  .reviews__cards::-webkit-scrollbar-track {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: rgba(36, 51, 106, 0.2);
+  }
+
+  .reviews__cards li {
+    width: initial;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 308px;
+            flex: 0 0 308px;
+  }
+
+  .reviews__hand {
+    margin: 82px 0 0 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32px;
+  }
+
+  .reviews__hand:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 27px;
+    height: 32px;
+    background-image: url("../img/pricing/hand.png");
+    background-size: 27px 32px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
