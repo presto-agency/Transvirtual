@@ -8,6 +8,9 @@ window.addEventListener('DOMContentLoaded', function () {
   if (window.screen.width < 1200) {
     showSubmenu(document.querySelectorAll('.submenu-item-trigger'))
   }
+  if (!!document.querySelector(".questions")) {
+    showSubmenu(document.querySelectorAll(".submenu-questions"))
+  }
 })
 
 const headerActive = () => {
@@ -54,7 +57,7 @@ const showSubmenu = (itemsLinks) => {
           let itemsMenu = item.querySelectorAll('.dropdown-menu>li');
           let submenuHeight = getHeight(itemsMenu)
           checkHeight(itemsMenu[0], submenuHeight)
-          itemsMenu[0].parentNode.parentNode.classList.toggle('open')
+          item.classList.toggle('open')
         }
       })
     }
