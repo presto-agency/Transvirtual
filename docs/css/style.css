@@ -167,6 +167,11 @@ h6 {
   transition: 300ms;
 }
 
+.link-style > p {
+  font-size: 14px;
+  line-height: 14px;
+}
+
 .btn-cta {
   display: inline-block;
   font-family: "Kamerik";
@@ -1432,6 +1437,11 @@ p strong {
   }
 
   .header .link-style {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .header .link-style > p {
     font-size: 28px;
     line-height: 36px;
   }

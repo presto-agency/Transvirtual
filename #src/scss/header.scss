@@ -380,6 +380,11 @@
     .link-style {
       font-size: 28px;
       line-height: 36px;
+
+      > p {
+        font-size: 28px;
+        line-height: 36px;
+      }
     }
 
     &__content {
