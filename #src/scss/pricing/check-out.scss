@@ -1,0 +1,87 @@
+.check-out {
+  margin: 83px 0;
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 80px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/pricing/trolley.svg");
+      background-size: 60px 60px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px 0 0;
+
+      strong {
+        font-size: 28px;
+        line-height: 42px;
+        font-weight: 700;
+        color: $col-dark-navy;
+      }
+
+      small {
+        font-size: 21px;
+        line-height: 34px;
+        color: $col-grey-text;
+      }
+    }
+
+    .btn-cta-v {
+      align-self: center;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .check-out {
+    margin: 50px 0;
+
+    &__content {
+      padding: 80px 0 0 0;
+      flex-direction: column;
+
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      p {
+        text-align: center;
+        margin: 0 0 24px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .check-out {
+    &__content{
+      p{
+      strong{
+        font-size: 20px;
+        line-height: 33px;
+      }
+      small{
+        font-size: 16px;
+        line-height: 26px;
+      }
+      }
+    }
+  }
+}

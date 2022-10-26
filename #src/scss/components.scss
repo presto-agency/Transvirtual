@@ -37,6 +37,7 @@
   padding: 12px 30px;
   border-radius: 100px;
   font-weight: 700;
+  white-space: nowrap;
   transition: 300ms;
 
   &._orange {
@@ -52,7 +53,7 @@
   }
 }
 
-.btn-cta-v{
+.btn-cta-v {
   display: inline-block;
   font-size: 20px;
   line-height: 33px;
@@ -60,10 +61,13 @@
   transition: 300ms;
   padding: 16px 32px;
   border-radius: 8px;
-  &.ico-play-mod{
+  white-space: nowrap;
+
+  &.ico-play-mod {
     position: relative;
     padding: 16px 60px 16px 32px;
-    svg{
+
+    svg {
       position: absolute;
       width: 20px;
       height: 20px;
@@ -74,6 +78,7 @@
       transition: 300ms;
     }
   }
+
   &._orange {
     color: $col-white;
     background-color: $col-orange;
@@ -82,14 +87,41 @@
       &:hover {
         color: $col-orange;
         background-color: $col-white;
-        &.ico-play-mod{
-          svg{
+
+        &.ico-play-mod {
+          svg {
             fill: $col-orange;
           }
         }
       }
     }
   }
+
+  &._white {
+    color: $col-orange;
+    background-color: $col-white;
+    border: 2px solid $col-orange;
+
+    &.ico-play-mod {
+      svg {
+        fill: $col-orange;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      &:hover {
+        color: $col-white;
+        background-color: $col-orange;
+
+        &.ico-play-mod {
+          svg {
+            fill: $col-white;
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width: 374px) {
     font-size: 14px;
     line-height: 18px;
