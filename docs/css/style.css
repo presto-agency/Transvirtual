@@ -1326,6 +1326,137 @@ p strong {
       align-self: center;
 }
 
+.book-free__content {
+  position: relative;
+  padding: 81px 20px 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 -20px;
+}
+
+.book-free__content:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.9;
+  height: 100%;
+  background-image: url("../img/pricing/frame.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+}
+
+.book-free__content_top {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-family: Kamerik;
+  font-size: 46px;
+  line-height: 49px;
+  max-width: 914px;
+  margin: 0 auto 43px;
+  text-align: center;
+  padding: 92px 0 0 0;
+}
+
+.book-free__content_top:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/pricing/car.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60px 60px;
+}
+
+.book-free__content_top strong {
+  font-size: 52px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.book-free__content_bottom {
+  position: relative;
+  z-index: 2;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 44px 0 0 0;
+}
+
+.book-free__content_bottom span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.book-free__content_bottom a {
+  position: relative;
+  margin: 0 0 0 24px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 33px;
+  border-bottom: 1px solid #fff;
+}
+
+.book-free__content_bottom a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -24px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/pricing/call.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.book-free__content img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.book-free__content .btn-cta-v {
+  position: relative;
+  z-index: 2;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 @media (min-width: 1200px) {
   .link-style:hover {
     color: #E88645;
@@ -1988,6 +2119,16 @@ p strong {
   .check-out__content p small {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .book-free__content_top {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .book-free__content_top strong {
+    font-size: 28px;
+    line-height: 42px;
   }
 }
 
