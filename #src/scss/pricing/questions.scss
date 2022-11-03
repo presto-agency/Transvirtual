@@ -40,7 +40,7 @@
             width: 30px;
             height: 3px;
             border-radius: 8px;
-            background: $col-orange;
+            background: $col-orange-dark;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
@@ -82,9 +82,9 @@
       font-size: 20px;
       line-height: 33px;
       font-weight: 700;
-      color: $col-orange;
+      color: $col-orange-dark;
       text-align: center;
-      border-bottom: 1px solid $col-orange;
+      border-bottom: 1px solid $col-orange-dark;
     }
   }
 }
