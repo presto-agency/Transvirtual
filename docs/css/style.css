@@ -1252,7 +1252,8 @@ p strong {
           justify-content: center;
 }
 
-.questions__see p {
+.questions__see p,
+.questions__see a {
   font-family: Kamerik;
   cursor: pointer;
   font-size: 20px;
