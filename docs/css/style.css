@@ -1326,6 +1326,10 @@ p strong {
       align-self: center;
 }
 
+.book-free .container {
+  max-width: 100%;
+}
+
 .book-free__content {
   position: relative;
   padding: 81px 20px 114px;
