@@ -2212,7 +2212,7 @@ p strong {
   }
 
   .questions .helpie-faq.accordions .accordion .accordion__item .accordion__header {
-    padding: 34px 70px 34px 32px !important;
+    padding: 34px 70px 34px 0 !important;
   }
 
   .check-out__content p strong {
