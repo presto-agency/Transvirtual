@@ -1275,6 +1275,10 @@ p strong {
   border-bottom: 1px solid #E3E3E3 !important;
 }
 
+.questions .accordion__header {
+  padding: 34px 70px 34px 32px !important;
+}
+
 .questions .accordion__header:before,
 .questions .accordion__header:after {
   background: #DA5D03 !important;
@@ -2205,6 +2209,10 @@ p strong {
     font-size: 16px;
     line-height: 26px;
     margin: 16px;
+  }
+
+  .questions .accordion__header {
+    padding: 34px 70px 34px 32px !important;
   }
 
   .check-out__content p strong {

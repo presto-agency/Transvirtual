@@ -128,6 +128,11 @@
     }
 
     &__header {
+      padding: 34px 70px 34px 32px !important;
+      @media (max-width: 767px) {
+        padding: 34px 70px 34px 32px !important;
+      }
+
       &:before, &:after {
         background: $col-orange-dark !important;
       }
@@ -149,7 +154,8 @@
       }
 
       ul {
-        margin: 20px 0!important;
+        margin: 20px 0 !important;
+
         li {
           position: relative !important;
           padding: 0 0 0 30px !important;
@@ -177,7 +183,8 @@
       }
 
       ol {
-        margin: 20px 0!important;
+        margin: 20px 0 !important;
+
         li {
           counter-increment: step-counter !important;
           padding: 0 0 0 30px !important;
