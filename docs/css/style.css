@@ -2211,7 +2211,7 @@ p strong {
     margin: 16px;
   }
 
-  .questions .accordion__header {
+  .questions .helpie-faq.accordions .accordion .accordion__item .accordion__header {
     padding: 34px 70px 34px 32px !important;
   }
 

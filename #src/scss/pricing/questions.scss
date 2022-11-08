@@ -129,9 +129,6 @@
 
     &__header {
       padding: 34px 70px 34px 32px !important;
-      @media (max-width: 767px) {
-        padding: 34px 70px 34px 32px !important;
-      }
 
       &:before, &:after {
         background: $col-orange-dark !important;
@@ -212,6 +209,12 @@
         }
       }
 
+    }
+  }
+
+  @media(max-width: 767px) {
+    .helpie-faq.accordions .accordion .accordion__item .accordion__header {
+      padding: 34px 70px 34px 32px !important;
     }
   }
 }
