@@ -149,6 +149,7 @@
       }
 
       ul {
+        margin: 20px 0!important;
         li {
           position: relative !important;
           padding: 0 0 0 30px !important;
@@ -161,7 +162,7 @@
           &:before {
             content: '';
             position: absolute;
-            top: 3px;
+            top: 9px;
             left: 0;
             width: 8px;
             height: 8px;
@@ -176,6 +177,7 @@
       }
 
       ol {
+        margin: 20px 0!important;
         li {
           counter-increment: step-counter !important;
           padding: 0 0 0 30px !important;
@@ -192,7 +194,7 @@
             font-weight: 400;
             padding: 4px;
             position: absolute;
-            top: 3px;
+            top: 9px;
             left: 0;
             color: $col-black;
           }

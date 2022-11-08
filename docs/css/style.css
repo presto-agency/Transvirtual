@@ -1296,6 +1296,10 @@ p strong {
   margin: 0 !important;
 }
 
+.questions .accordion__body ul {
+  margin: 20px 0 !important;
+}
+
 .questions .accordion__body ul li {
   position: relative !important;
   padding: 0 0 0 30px !important;
@@ -1309,7 +1313,7 @@ p strong {
 .questions .accordion__body ul li:before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 9px;
   left: 0;
   width: 8px;
   height: 8px;
@@ -1319,6 +1323,10 @@ p strong {
 
 .questions .accordion__body ul li:last-of-type {
   margin: 0 !important;
+}
+
+.questions .accordion__body ol {
+  margin: 20px 0 !important;
 }
 
 .questions .accordion__body ol li {
@@ -1338,7 +1346,7 @@ p strong {
   font-weight: 400;
   padding: 4px;
   position: absolute;
-  top: 3px;
+  top: 9px;
   left: 0;
   color: #1D1D20;
 }
