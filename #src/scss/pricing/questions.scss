@@ -141,8 +141,68 @@
         font-size: 18px !important;
         line-height: 24px !important;
         font-weight: 400 !important;
-        margin: 0 !important;
+        margin: 0 0 10px 0 !important;
+
+        &:last-of-type {
+          margin: 0 !important;
+        }
       }
+
+      ul {
+        li {
+          position: relative !important;
+          padding: 0 0 0 30px !important;
+          color: $col-black !important;
+          font-size: 18px !important;
+          line-height: 24px !important;
+          font-weight: 400 !important;
+          margin: 0 0 10px 0 !important;
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $col-orange-dark;
+          }
+
+          &:last-of-type {
+            margin: 0 !important;
+          }
+        }
+      }
+
+      ol {
+        li {
+          counter-increment: step-counter !important;
+          padding: 0 0 0 30px !important;
+          color: $col-black !important;
+          font-size: 18px !important;
+          line-height: 24px !important;
+          font-weight: 400 !important;
+          margin: 0 0 10px 0 !important;
+
+          &:before {
+            content: counter(step-counter);
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 400;
+            padding: 4px;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            color: $col-black;
+          }
+
+          &:last-of-type {
+            margin: 0 !important;
+          }
+        }
+      }
+
     }
   }
 }
