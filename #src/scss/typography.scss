@@ -1,40 +1,43 @@
-h1, h2, h3, h4, h5, h6, h7 {
-  font-weight: 700;
-  color: $col-dark-navy;
-}
-
-h1 {
-  font-size: 52px;
-  line-height: 52px;
-  @media (max-width: 767px) {
-    font-size: 36px;
-    line-height: 38px;
-  }
-}
-
-h2 {
-  font-size: 46px;
-  line-height: 48px;
-  @media (max-width: 767px) {
-    font-size: 36px;
-    line-height: 38px;
-  }
-}
-
-h3 {
-  font-size: 36px;
-  line-height: 38px;
-  @media (max-width: 767px) {
-    font-size: 28px;
-    line-height: 30px;
-  }
-}
-
-p {
-  strong {
+.header, .hero-block, .logos-list, .reviews, .stack-up, .management, .questions, .book-free, .check-out {
+  h1, h2, h3, h4, h5, h6, h7 {
     font-weight: 700;
+    color: $col-dark-navy;
   }
 
-  font-size: 28px;
-  line-height: 42px;
+  h1 {
+    font-size: 52px;
+    line-height: 52px;
+    @media (max-width: 767px) {
+      font-size: 36px;
+      line-height: 38px;
+    }
+  }
+
+  h2 {
+    font-size: 46px;
+    line-height: 48px;
+    @media (max-width: 767px) {
+      font-size: 36px;
+      line-height: 38px;
+    }
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 38px;
+    @media (max-width: 767px) {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+
+  p {
+    strong {
+      font-weight: 700;
+    }
+
+    font-size: 28px;
+    line-height: 42px;
+  }
 }
+

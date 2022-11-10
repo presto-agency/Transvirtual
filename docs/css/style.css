@@ -568,38 +568,134 @@ h6 {
      object-fit: contain;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h7 {
+.header h1,
+.header h2,
+.header h3,
+.header h4,
+.header h5,
+.header h6,
+.header h7,
+.hero-block h1,
+.hero-block h2,
+.hero-block h3,
+.hero-block h4,
+.hero-block h5,
+.hero-block h6,
+.hero-block h7,
+.logos-list h1,
+.logos-list h2,
+.logos-list h3,
+.logos-list h4,
+.logos-list h5,
+.logos-list h6,
+.logos-list h7,
+.reviews h1,
+.reviews h2,
+.reviews h3,
+.reviews h4,
+.reviews h5,
+.reviews h6,
+.reviews h7,
+.stack-up h1,
+.stack-up h2,
+.stack-up h3,
+.stack-up h4,
+.stack-up h5,
+.stack-up h6,
+.stack-up h7,
+.management h1,
+.management h2,
+.management h3,
+.management h4,
+.management h5,
+.management h6,
+.management h7,
+.questions h1,
+.questions h2,
+.questions h3,
+.questions h4,
+.questions h5,
+.questions h6,
+.questions h7,
+.book-free h1,
+.book-free h2,
+.book-free h3,
+.book-free h4,
+.book-free h5,
+.book-free h6,
+.book-free h7,
+.check-out h1,
+.check-out h2,
+.check-out h3,
+.check-out h4,
+.check-out h5,
+.check-out h6,
+.check-out h7 {
   font-weight: 700;
   color: #24336A;
 }
 
-h1 {
+.header h1,
+.hero-block h1,
+.logos-list h1,
+.reviews h1,
+.stack-up h1,
+.management h1,
+.questions h1,
+.book-free h1,
+.check-out h1 {
   font-size: 52px;
   line-height: 52px;
 }
 
-h2 {
+.header h2,
+.hero-block h2,
+.logos-list h2,
+.reviews h2,
+.stack-up h2,
+.management h2,
+.questions h2,
+.book-free h2,
+.check-out h2 {
   font-size: 46px;
   line-height: 48px;
 }
 
-h3 {
+.header h3,
+.hero-block h3,
+.logos-list h3,
+.reviews h3,
+.stack-up h3,
+.management h3,
+.questions h3,
+.book-free h3,
+.check-out h3 {
   font-size: 36px;
   line-height: 38px;
 }
 
-p {
+.header p,
+.hero-block p,
+.logos-list p,
+.reviews p,
+.stack-up p,
+.management p,
+.questions p,
+.book-free p,
+.check-out p {
   font-size: 28px;
   line-height: 42px;
 }
 
-p strong {
+.header p strong,
+.hero-block p strong,
+.logos-list p strong,
+.reviews p strong,
+.stack-up p strong,
+.management p strong,
+.questions p strong,
+.book-free p strong,
+.check-out p strong {
   font-weight: 700;
 }
 
@@ -2009,17 +2105,41 @@ p strong {
 }
 
 @media (max-width: 767px) {
-  h1 {
+  .header h1,
+  .hero-block h1,
+  .logos-list h1,
+  .reviews h1,
+  .stack-up h1,
+  .management h1,
+  .questions h1,
+  .book-free h1,
+  .check-out h1 {
     font-size: 36px;
     line-height: 38px;
   }
 
-  h2 {
+  .header h2,
+  .hero-block h2,
+  .logos-list h2,
+  .reviews h2,
+  .stack-up h2,
+  .management h2,
+  .questions h2,
+  .book-free h2,
+  .check-out h2 {
     font-size: 36px;
     line-height: 38px;
   }
 
-  h3 {
+  .header h3,
+  .hero-block h3,
+  .logos-list h3,
+  .reviews h3,
+  .stack-up h3,
+  .management h3,
+  .questions h3,
+  .book-free h3,
+  .check-out h3 {
     font-size: 28px;
     line-height: 30px;
   }
