@@ -568,13 +568,6 @@ h6 {
      object-fit: contain;
 }
 
-.header h1,
-.header h2,
-.header h3,
-.header h4,
-.header h5,
-.header h6,
-.header h7,
 .hero-block h1,
 .hero-block h2,
 .hero-block h3,
@@ -635,7 +628,6 @@ h6 {
   color: #24336A;
 }
 
-.header h1,
 .hero-block h1,
 .logos-list h1,
 .reviews h1,
@@ -648,7 +640,6 @@ h6 {
   line-height: 52px;
 }
 
-.header h2,
 .hero-block h2,
 .logos-list h2,
 .reviews h2,
@@ -661,7 +652,6 @@ h6 {
   line-height: 48px;
 }
 
-.header h3,
 .hero-block h3,
 .logos-list h3,
 .reviews h3,
@@ -674,7 +664,6 @@ h6 {
   line-height: 38px;
 }
 
-.header p,
 .hero-block p,
 .logos-list p,
 .reviews p,
@@ -687,7 +676,6 @@ h6 {
   line-height: 42px;
 }
 
-.header p strong,
 .hero-block p strong,
 .logos-list p strong,
 .reviews p strong,
@@ -2105,7 +2093,6 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  .header h1,
   .hero-block h1,
   .logos-list h1,
   .reviews h1,
@@ -2118,7 +2105,6 @@ h6 {
     line-height: 38px;
   }
 
-  .header h2,
   .hero-block h2,
   .logos-list h2,
   .reviews h2,
@@ -2131,7 +2117,6 @@ h6 {
     line-height: 38px;
   }
 
-  .header h3,
   .hero-block h3,
   .logos-list h3,
   .reviews h3,
