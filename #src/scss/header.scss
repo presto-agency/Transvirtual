@@ -22,7 +22,7 @@
       display: flex;
       align-items: center;
       flex: 0 1 100%;
-      justify-content: flex-end;
+      justify-content: space-between;
       padding: 18px 0 0 0;
       transition: 500ms;
 
@@ -40,7 +40,7 @@
               @media (min-width: 1200px) {
                 &:hover {
                   svg {
-                    fill: $col-orange;
+                    fill: $col-orange-dark;
                   }
 
                   .dropdown-menu {
@@ -101,10 +101,10 @@
                 @media (min-width: 1200px) {
                   li {
                     &:hover {
-                      color: $col-orange;
+                      color: $col-orange-dark;
 
                       a {
-                        color: $col-orange;
+                        color: $col-orange-dark;
                       }
                     }
                   }
@@ -197,7 +197,7 @@
                     font-size: 12px;
                     line-height: 12px;
                     font-weight: 700;
-                    color: $col-orange;
+                    color: $col-orange-dark;
                     margin: 3px 0 16px;
                   }
                 }
@@ -276,7 +276,7 @@
       height: 14px;
       box-sizing: content-box;
       border-radius: 50%;
-      background-color: $col-orange;
+      background-color: $col-orange-dark;
 
       span {
         position: absolute;
@@ -527,8 +527,8 @@
                 a {
                   font-size: 16px;
                   line-height: 16px;
-                  color: $col-orange;
-                  border-bottom: 1px solid $col-orange;
+                  color: $col-orange-dark;
+                  border-bottom: 1px solid $col-orange-dark;
                 }
               }
 

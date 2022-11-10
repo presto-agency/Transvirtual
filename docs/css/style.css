@@ -188,8 +188,8 @@ h6 {
 
 .btn-cta._orange {
   color: #fff;
-  background-color: #E88645;
-  border: 2px solid #E88645;
+  background-color: #DA5D03;
+  border: 2px solid #DA5D03;
 }
 
 .btn-cta-v {
@@ -273,9 +273,9 @@ h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100%;
           flex: 0 1 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 18px 0 0 0;
   -webkit-transition: 500ms;
   -o-transition: 500ms;
@@ -445,7 +445,7 @@ h6 {
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
-  color: #E88645;
+  color: #DA5D03;
   margin: 3px 0 16px;
 }
 
@@ -521,7 +521,7 @@ h6 {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   border-radius: 50%;
-  background-color: #E88645;
+  background-color: #DA5D03;
 }
 
 .header__content_burger span {
@@ -1559,19 +1559,19 @@ p strong {
 
 @media (min-width: 1200px) {
   .link-style:hover {
-    color: #E88645;
+    color: #DA5D03;
   }
 
   .link-style:hover a {
-    color: #E88645;
+    color: #DA5D03;
   }
 
   .link-style:hover.submenu svg {
-    fill: #E88645;
+    fill: #DA5D03;
   }
 
   .btn-cta._orange:hover {
-    color: #E88645;
+    color: #DA5D03;
     background-color: #fff;
   }
 
@@ -1600,7 +1600,7 @@ p strong {
   }
 
   .header__content_navigation .navigation__list_link.submenu-item-trigger:hover svg {
-    fill: #E88645;
+    fill: #DA5D03;
   }
 
   .header__content_navigation .navigation__list_link.submenu-item-trigger:hover .dropdown-menu {
@@ -1609,11 +1609,11 @@ p strong {
   }
 
   .header__content_navigation .navigation__list_link .dropdown-menu li li:hover {
-    color: #E88645;
+    color: #DA5D03;
   }
 
   .header__content_navigation .navigation__list_link .dropdown-menu li li:hover a {
-    color: #E88645;
+    color: #DA5D03;
   }
 
   .header__content_navigation .navigation__list_link .dropdown-menu > li:nth-child(2) > a:hover {
@@ -1842,8 +1842,8 @@ p strong {
   .header__content_navigation .navigation__cta_link:first-child a {
     font-size: 16px;
     line-height: 16px;
-    color: #E88645;
-    border-bottom: 1px solid #E88645;
+    color: #DA5D03;
+    border-bottom: 1px solid #DA5D03;
   }
 
   .header__content_navigation .navigation__cta_link.ico-svg {

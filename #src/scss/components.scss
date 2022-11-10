@@ -19,15 +19,15 @@
 
   @media (min-width: 1200px) {
     &:hover {
-      color: $col-orange;
+      color: $col-orange-dark;
 
       a {
-        color: $col-orange;
+        color: $col-orange-dark;
       }
 
       &.submenu {
         svg {
-          fill: $col-orange;
+          fill: $col-orange-dark;
         }
       }
     }
@@ -47,11 +47,11 @@
 
   &._orange {
     color: $col-white;
-    background-color: $col-orange;
-    border: 2px solid $col-orange;
+    background-color: $col-orange-dark;
+    border: 2px solid $col-orange-dark;
     @media (min-width: 1200px) {
       &:hover {
-        color: $col-orange;
+        color: $col-orange-dark;
         background-color: $col-white;
       }
     }
