@@ -241,8 +241,8 @@ h6 {
   border: 2px solid #DA5D03;
 }
 
-.btn-cta-v._white.ico-play-mod svg {
-  fill: #DA5D03;
+.btn-cta-v._white.ico-play-mod:before {
+  background-image: url("../img/play-ico-o.svg");
 }
 
 .header {
@@ -1679,8 +1679,8 @@ h6 {
     background-color: #DA5D03;
   }
 
-  .btn-cta-v._white:hover.ico-play-mod svg {
-    fill: #fff;
+  .btn-cta-v._white:hover.ico-play-mod:before {
+    background-image: url("../img/play-ico.svg");
   }
 
   .header.hide {

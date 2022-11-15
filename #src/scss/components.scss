@@ -113,8 +113,8 @@
     border: 2px solid $col-orange-dark;
 
     &.ico-play-mod {
-      svg {
-        fill: $col-orange-dark;
+      &:before {
+        background-image: url("../img/play-ico-o.svg");
       }
     }
 
@@ -124,8 +124,8 @@
         background-color: $col-orange-dark;
 
         &.ico-play-mod {
-          svg {
-            fill: $col-white;
+          &:before {
+            background-image: url("../img/play-ico.svg");
           }
         }
       }
