@@ -215,6 +215,14 @@
             position: relative;
             padding: 14px 40px 32px;
 
+            &:nth-child(1) {
+              order: 2;
+            }
+
+            &:nth-child(2) {
+              order: 1;
+            }
+
             &.ico-svg {
               padding: 14px 40px 32px 23px;
               margin: 0 0 0 40px;
@@ -234,17 +242,6 @@
               }
             }
 
-            &:before {
-              content: '';
-              position: absolute;
-              right: 0;
-              top: calc(50% - 9px);
-              width: 1px;
-              transform: translateY(-50%);
-              height: 17px;
-              background-color: $col-grey;
-            }
-
             span {
               display: none;
               font-size: 16px;
@@ -256,6 +253,7 @@
           .btn-cta {
             align-self: flex-start;
             margin: 0 0 0 37px;
+            order: 3;
 
             span {
               &:nth-child(2) {
@@ -333,7 +331,6 @@
           &__cta {
             &_link {
               padding: 14px 20px 32px;
-
               &.ico-svg {
                 margin: 0 0 0 20px;
                 padding: 14px 20px 32px 23px;
@@ -532,6 +529,11 @@
                 }
               }
 
+              &:nth-child(2) {
+                order: 1;
+              }
+
+
               &.ico-svg {
                 border-top: 1px solid $col-grey;
                 border-bottom: 1px solid $col-grey;
@@ -552,6 +554,7 @@
             }
 
             .btn-cta {
+              order: 2;
               margin: 0;
               padding: 22px 102px;
               align-self: center;

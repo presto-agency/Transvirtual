@@ -40,19 +40,20 @@
   font-size: 14px;
   line-height: 14px;
   padding: 12px 30px;
-  border-radius: 100px;
+  border-radius: 8px;
   font-weight: 700;
   white-space: nowrap;
   transition: 300ms;
+  color: $col-orange-dark;
+  background-color: $col-white;
 
   &._orange {
-    color: $col-white;
-    background-color: $col-orange-dark;
+
     border: 2px solid $col-orange-dark;
     @media (min-width: 1200px) {
       &:hover {
-        color: $col-orange-dark;
-        background-color: $col-white;
+        color: $col-white;
+        background-color: $col-orange-dark;
       }
     }
   }
@@ -72,15 +73,19 @@
     position: relative;
     padding: 16px 60px 16px 32px;
 
-    svg {
+    &:before {
+      content: '';
       position: absolute;
       width: 20px;
       height: 20px;
-      fill: $col-white;
       right: 32px;
       top: 50%;
       transform: translateY(-50%);
       transition: 300ms;
+      background-image: url("../img/play-ico.svg");
+      background-size: 20px 20px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -94,8 +99,8 @@
         background-color: $col-white;
 
         &.ico-play-mod {
-          svg {
-            fill: $col-orange-dark;
+          &:before {
+            background-image: url("../img/play-ico-o.svg");
           }
         }
       }
