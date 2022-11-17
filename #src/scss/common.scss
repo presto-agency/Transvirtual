@@ -8,7 +8,8 @@
   padding: 0px 20px;
   margin: 0px auto;
   box-sizing: content-box;
-  &._medium{
+
+  &._medium {
     max-width: 1271px;
   }
 }
@@ -23,4 +24,20 @@
 .page {
   position: relative;
   z-index: 2;
+}
+
+//===========================
+.blog-new-articles-bottom {
+  .pagination {
+    .nav-links {
+      .page-numbers {
+        transition: 300ms !important;
+        cursor: pointer !important;
+
+        &:hover {
+          color: $col-orange-dark !important;
+        }
+      }
+    }
+  }
 }

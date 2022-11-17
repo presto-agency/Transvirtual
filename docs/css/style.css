@@ -112,16 +112,6 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
 .wrapper {
   overflow: hidden;
   min-height: 100%;
@@ -146,6 +136,17 @@ h6 {
 .page {
   position: relative;
   z-index: 2;
+}
+
+.blog-new-articles-bottom .pagination .nav-links .page-numbers {
+  -webkit-transition: 300ms !important;
+  -o-transition: 300ms !important;
+  transition: 300ms !important;
+  cursor: pointer !important;
+}
+
+.blog-new-articles-bottom .pagination .nav-links .page-numbers:hover {
+  color: #DA5D03 !important;
 }
 
 .link-style {
