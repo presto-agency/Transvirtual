@@ -45,4 +45,5 @@ yarn start
 
 deploy to gh-pages automatically after push to branch
 
-deploy: [gh-pages](https://presto-agency.github.io/Transvirtual/)
+deploy:
+[main](https://presto-agency.github.io/Transvirtual/)
